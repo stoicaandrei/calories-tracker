@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@models": ["apps/api/src/models"],
+      "@middlewares": ["apps/api/src/middlewares"],
+      "@calories-tracker/api-interfaces": ["libs/api-interfaces/src"]
+    }
+  }
+}
